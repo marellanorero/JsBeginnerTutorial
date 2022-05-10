@@ -1,7 +1,7 @@
-function getColor(colorname)
-{   
-	switch(colorname.toLocaleLowerCase()){
-        //Add more options here
+function getColor(selection)
+{
+	switch(selection.toLowerCase()){
+		// Add more options here
         case 0:
             colorname = 'red';
             return true;
@@ -14,18 +14,16 @@ function getColor(colorname)
             colorname = 'blue';
             return true;
             break;
-	    default :
-	    	return false;//returns false because the user picked an unavailable color
-	    break;               
-    }
-    return colorname;
+	    default:
+	    	return false;  //returns false because the user picked an unavailable color
+	        break;               
+	}
 }
 
-var colorname = prompt('What color do you want?');
+var colorname = prompt('What color do you want?').trim();
 var isAvailable = getColor(colorname);
-if(isAvailable === true ) { 
-    console.log('Good news! That color is available');
-}
-else  {
-console.log('We are sorry, that color is not available');
-}
+
+if(isAvailable)
+	console.log('Good news! That color is available');
+else 
+	console.log('We are sorry, that color is not available');

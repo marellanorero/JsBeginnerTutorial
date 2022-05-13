@@ -32,10 +32,6 @@ function addAllFamilyLuckyNumbers(anArray){
 }
 
 //Enter all your code here:
-person.lucky_numbers[3] = 33
-console.log(person.lucky_numbers[3])
-
-
 
 
 //Do not make changes below:

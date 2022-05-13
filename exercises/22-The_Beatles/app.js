@@ -6,7 +6,7 @@ function sing() {
     let be = {"let it be, "}
     let text= ""; 
     for( let i = 0; i < 4; i++){
-        text += be{i}; 
+        text += be[i]; 
     }
 }
 

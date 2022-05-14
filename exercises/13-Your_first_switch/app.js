@@ -2,16 +2,13 @@ function getColor(selection)
 {
 	switch(selection.toLowerCase()){
 		// Add more options here
-        case 0:
-            colorname = 'red';
+        case 'red':
             return true;
             break;
-        case 1:
-            colorname = 'green';
+        case 'green':
             return true;
             break;
-        case 2:
-            colorname = 'blue';
+        case 'blue':
             return true;
             break;
 	    default:
